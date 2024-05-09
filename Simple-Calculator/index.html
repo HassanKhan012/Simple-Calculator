@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big-container">
+        <div class="container">
+            <div class="header-container">
+                <h1 id="toast">Calculator</h1>
+            </div>
+            <div class="first-row">
+                <input type="text" name="result" id="ans" placeholder="Result" readonly />
+                <input type="button" value="C" id="clear-button" onclick="clrAll()" />
+            </div>
+            <div class="second-row">
+                <input type="button" value="1" onclick="calculator(1)" />
+                <input type="button" value="2" onclick="calculator(2)" />
+                <input type="button" value="3" onclick="calculator(3)" />
+                <input type="button" value="+" onclick="calculator('+')" />
+            </div>
+            <div class="third-row">
+                <input type="button" value="4" onclick=" calculator(4)" />
+                <input type="button" value="5" onclick=" calculator(5)" />
+                <input type="button" value="6" onclick=" calculator(6)" />
+                <input type="button" value="-" onclick="calculator('-')" />
+            </div>
+            <div class="fourth-row">
+                <input type="button" value="7" onclick="calculator(7)" />
+                <input type="button" value="8" onclick="calculator(8)" />
+                <input type="button" value="9" onclick=" calculator(9)" />
+                <input type="button" value="x" onclick="calculator('*')" />
+            </div>
+            <div class="fifth-row">
+                <input type="button" value="/" onclick="calculator('/')" />
+                <input type="button" value="0" onclick="calculator(0)" />
+                <input type="button" value="." onclick="calculator('.')" />
+                <input type="button" value="=" onclick="answerFunc()" />
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
